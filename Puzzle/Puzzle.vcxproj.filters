@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Drawer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Result.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Select.cpp" />
+    <ClCompile Include="Play.cpp" />
+    <ClCompile Include="Option.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Drawer.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="Result.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Select.h" />
+    <ClInclude Include="Play.h" />
+    <ClInclude Include="Option.h" />
+  </ItemGroup>
+</Project>

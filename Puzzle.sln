@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Puzzle", "Puzzle\Puzzle.vcxproj", "{9D6948D8-98E2-4C4A-83C8-A1E4EAA0EA22}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapMaker", "MapMaker\MapMaker.vcxproj", "{02DA3FED-7D77-4A47-BAEF-17B3F57115CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Framework\Framework.vcxproj", "{400253A9-0935-4A45-9EF3-F4B3105414EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D6948D8-98E2-4C4A-83C8-A1E4EAA0EA22}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D6948D8-98E2-4C4A-83C8-A1E4EAA0EA22}.Debug|Win32.Build.0 = Debug|Win32
+		{9D6948D8-98E2-4C4A-83C8-A1E4EAA0EA22}.Release|Win32.ActiveCfg = Release|Win32
+		{9D6948D8-98E2-4C4A-83C8-A1E4EAA0EA22}.Release|Win32.Build.0 = Release|Win32
+		{02DA3FED-7D77-4A47-BAEF-17B3F57115CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02DA3FED-7D77-4A47-BAEF-17B3F57115CE}.Debug|Win32.Build.0 = Debug|Win32
+		{02DA3FED-7D77-4A47-BAEF-17B3F57115CE}.Release|Win32.ActiveCfg = Release|Win32
+		{02DA3FED-7D77-4A47-BAEF-17B3F57115CE}.Release|Win32.Build.0 = Release|Win32
+		{400253A9-0935-4A45-9EF3-F4B3105414EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{400253A9-0935-4A45-9EF3-F4B3105414EF}.Debug|Win32.Build.0 = Debug|Win32
+		{400253A9-0935-4A45-9EF3-F4B3105414EF}.Release|Win32.ActiveCfg = Release|Win32
+		{400253A9-0935-4A45-9EF3-F4B3105414EF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

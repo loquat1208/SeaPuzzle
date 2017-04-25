@@ -14,7 +14,6 @@ SelectPtr Select::getTask( ) {
 
 Select::Select( ) {
 	_stage = 1;
-
 }
 
 Select::~Select( ) {
@@ -23,6 +22,7 @@ Select::~Select( ) {
 void Select::update( ) {
 	
 }
+
 void Select::makeIcon( ) {
 
 }

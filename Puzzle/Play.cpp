@@ -27,12 +27,6 @@ Play::~Play( ) {
 }
 
 void Play::update( ) {
-	if ( _scene->getScene( ) == SCENE::SCENE_SELECT ) {
-		if ( !_select->selectStage( ) ) {
-			return;
-		}
-		setInit( _select->getStage( ) );
-	}
 	if ( _scene->getScene( ) != SCENE::SCENE_PLAY ) {
 		return;
 	}

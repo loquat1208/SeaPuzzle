@@ -53,7 +53,6 @@ Framework::~Framework( ) {
 }
 
 void Framework::run( ) {
-
 	while ( true ) {
 		if ( ProcessMessage( ) == -1 ) {
 			break;

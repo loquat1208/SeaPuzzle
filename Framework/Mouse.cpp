@@ -21,9 +21,6 @@ void Mouse::update( ) {
 
 	if ( ( GetMouseInput( ) & MOUSE_INPUT_LEFT ) != 0 ) {
 		_key++;
-		if ( _key > 2 ) {
-			_key = 2;
-		}
 	}
 	else {
 		_key = 0;

@@ -11,15 +11,15 @@ void main( ) {
 
     TaskPtr mouse = MousePtr( new Mouse );
     fw->addTask( Mouse::getTag( ), mouse );
-    
+
     TaskPtr scene = ScenePtr( new Scene );
     fw->addTask( Scene::getTag( ), scene );
 
 	TaskPtr select = SelectPtr( new Select );
 	fw->addTask( Select::getTag( ), select );
 
-    TaskPtr play = PlayPtr( new Play );
-    fw->addTask( Play::getTag( ), play );
+	TaskPtr play = PlayPtr(new Play);
+	fw->addTask(Play::getTag(), play);
 
     TaskPtr drawer = DrawerPtr( new Drawer );
     fw->addTask( Drawer::getTag( ), drawer );

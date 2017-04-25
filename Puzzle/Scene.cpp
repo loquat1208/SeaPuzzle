@@ -13,27 +13,31 @@ ScenePtr Scene::getTask( ) {
 Scene::Scene( ) {
 	_result = ResultPtr( new Result );
 	_mouse = Mouse::getTask( );
-	_play = Play::getTask( );
 	_select = SelectPtr( new Select );
 
-	_scene = SCENE::SCENE_PLAY;
+	_scene = SCENE::SCENE_TITLE;
 } 
 
 Scene::~Scene( ) {
 }
 
 void Scene::update( ) {
-	if ( _mouse->getStatus( ) < 2 ) {
-		return;
-	}
 	switch ( _scene ) {
 	case SCENE::SCENE_TITLE:
+		if ( _mouse->getStatus( ) != 1 ) {
+			return;
+		}
 		_scene = SCENE::SCENE_SELECT;
 		break;
 	case SCENE::SCENE_SELECT:
-		if ( !_select->selectStage( ) ) {
-			break;	
+		if ( _mouse->getStatus( ) != 1 ) {
+			return;
 		}
+		if ( !_select->selectStage( ) ) {
+			break;
+		}
+		_play = Play::getTask( );
+		_play->setInit( _select->getStage( ) );
 		_scene = SCENE::SCENE_PLAY;
 		break;
 	case SCENE::SCENE_PLAY:
@@ -45,9 +49,15 @@ void Scene::update( ) {
 		}
 		break;
 	case SCENE::SCENE_FAIL:
+		if ( _mouse->getStatus( ) != 1 ) {
+			return;
+		}
 		_scene = SCENE::SCENE_TITLE;
 		break;
 	case SCENE::SCENE_CLEAR:
+		if ( _mouse->getStatus( ) != 1 ) {
+			return;
+		}
 		_scene = SCENE::SCENE_TITLE;
 		break;
 	default:
